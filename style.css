@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+:root {
+    --margin-left: 2.5rem;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 62.5%;
+}
+
+.header, .header-ip {
+    padding: 3rem 0 1rem var(--margin-left);
+    font-size: 1.8rem;
+}
+
+#btn {
+    margin-left: 3rem;
+    padding: 0.5rem 2.5rem;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: #111;
+    color: #eee;
+}
+
+/* ----------------Map page--------------------- */
+.user-details {
+    margin-left: var(--margin-left);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.mapping {
+    height: 25rem;
+    margin: 1rem var(--margin-left);
+}
+
+.time-zone-section {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-top: 2rem;
+    margin-left: var(--margin-left);
+}
+
+.time-zone-section > p {
+    padding-bottom: 2rem;
+}
+
+/* 
+.post-office-details {
+} */
+
+.filter {
+    border: 2px solid #000;
+    margin: 0 var(--margin-left);
+    padding-left: 1rem;
+    height: 3rem;
+    border-radius: 0.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+#filter-input {
+    width: 90%;
+    font-size: 1.3rem;
+    border: none;
+}
+
+
+.post-offices{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+    row-gap: 3rem;
+    margin: 3rem var(--margin-left);
+}
+
+.post-info{
+    border: 2px solid #000;
+    padding: 1.8rem;
+    border-radius: 1.2rem;
+}
+
+.info, .info-d, .comment{
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.info{
+    padding-bottom: 1rem;
+}
+
+.info-title{
+    font-weight: 600;
+}
