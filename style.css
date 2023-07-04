@@ -95,7 +95,7 @@ body {
 }
 
 .filter {
-    border: 2px solid #000;
+    border: 1px solid #000;
     margin: 0 var(--margin-left);
     padding-left: 1rem;
     height: 3rem;
@@ -124,7 +124,7 @@ body {
 }
 
 .post-info {
-    border: 2px solid #000;
+    border: 1px solid #000;
     padding: 1.8rem;
     border-radius: 1.2rem;
 }
@@ -151,6 +151,7 @@ body {
 
 /* ---------------------Media Query-------------------- */
 @media screen and (max-width: 420px) {
+
     .header,
     .header-ip {
         padding: 3rem 0 1rem var(--margin-left);
@@ -242,11 +243,69 @@ body {
         border-radius: 1.2rem;
         margin-top: -1.2rem;
     }
+
+    #loader {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .header,
+    .header-ip {
+        padding: 3rem 0 1rem var(--margin-left);
+        font-size: 1.3rem;
+    }
+
+    .header-title {
+        padding: 3rem 0;
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+
+    .user-details {
+        margin: 0 var(--margin-left);
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+
+    .info,
+    .info-d,
+    .info-mb,
+    .comment {
+        font-size: 1.2rem;
+    }
+
+    .info-d {
+        padding-bottom: 0.4rem;
+    }
+   
 }
 
 @media screen and (max-width: 800px) {
     .post-offices{
         display: flex;
         flex-direction: column;
+    }
+
+    .time-zone-section {
+        padding-top: 1rem;
+        margin-left: var(--margin-left);
+    }
+    
+    .time-zone-section > p {
+        padding-bottom: 0.6rem;
+    }
+    
+
+    #loader {
+        position: absolute;
+        top: 50%;
+        left: 45%;
+        transform: translate(-50%, -50%);
     }
 }
