@@ -7,7 +7,7 @@ btn.addEventListener("click", async () => {
     try {
         loader.removeAttribute('class', 'none');
 
-        // const response = await fetch("https://api.ipify.org?format=json");
+        const response = await fetch("https://api.ipify.org?format=json");
         const ipAddress = await response.json();
 
         let ip = ipAddress.toString();
