@@ -13,7 +13,7 @@ btn.addEventListener("click", async () => {
         let ip = ipAddress.toString();
         const token = "9409fb8e79a233";
 
-        // const apiUrl = "https://ipinfo.io/geo?ip=" + ip + "&token=" + token;
+        const apiUrl = "https://ipinfo.io/geo?ip=" + ip + "&token=" + token;
         // const apiUrl = `https://ipinfo.io/${ip}/geo`
 
         const rawdata = await fetch(apiUrl);
