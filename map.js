@@ -110,7 +110,7 @@ async function onload() {
     // hostname.innerText = `Region:${userData.region}`;
     setMap(longitude, latitude);
 
-    timeZone.innerHTML = `<span>Message:</span><span class="comment"> ${userData.timezone}</span>`;
+    timeZone.innerHTML = `<span>Time Zone:</span><span class="comment"> ${userData.timezone}</span>`;
     setInterval(displayTimeAndDate, 1000);
     pincode.innerHTML = `<span>Pincode:</span><span class="comment"> ${userData.postal}`;
     await postOffice();
