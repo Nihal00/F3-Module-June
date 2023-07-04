@@ -15,9 +15,15 @@ body {
     font-size: 62.5%;
 }
 
-.header, .header-ip {
+.header,
+.header-ip {
     padding: 3rem 0 1rem var(--margin-left);
     font-size: 1.8rem;
+}
+.header-title{
+    padding: 3rem 0;
+    font-size: 1.8rem;
+    font-weight: 400;
 }
 
 #btn {
@@ -27,13 +33,41 @@ body {
     border-radius: 0.3rem;
     background-color: #111;
     color: #eee;
+    cursor: pointer;
+}
+
+#loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+    margin: 0 auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.none{
+    display: none;
 }
 
 /* ----------------Map page--------------------- */
 .user-details {
-    margin-left: var(--margin-left);
+    margin: 0 var(--margin-left);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 30% 30% 40%;
     font-weight: bold;
     font-size: 1.2rem;
 }
@@ -54,10 +88,6 @@ body {
     padding-bottom: 2rem;
 }
 
-/* 
-.post-office-details {
-} */
-
 .filter {
     border: 2px solid #000;
     margin: 0 var(--margin-left);
@@ -75,8 +105,11 @@ body {
     border: none;
 }
 
+#filter-input:focus{
+    outline:none!important;
+}
 
-.post-offices{
+.post-offices {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 3rem;
@@ -84,21 +117,27 @@ body {
     margin: 3rem var(--margin-left);
 }
 
-.post-info{
+.post-info {
     border: 2px solid #000;
     padding: 1.8rem;
     border-radius: 1.2rem;
 }
 
-.info, .info-d, .comment{
+.info,
+.info-d,
+.info-mb,
+.comment {
     font-weight: 400;
     font-size: 1.2rem;
 }
 
-.info{
+.info {
     padding-bottom: 1rem;
 }
 
-.info-title{
+.info-title {
     font-weight: 600;
+}
+.info-mb {
+    margin-bottom: 0.5rem;
 }
