@@ -13,6 +13,7 @@ region.innerHTML = "";
 organization.innerHTML = "";
 
 const mapping = document.getElementById("mapping");
+const noResultFound = document.querySelector('.no-value');
 
 
 
@@ -145,7 +146,11 @@ filterInput.addEventListener("input", (e) => {
         }   
     });
     console.log(filtedPostOffice);
-   
+    if(filtedPostOffice.length === 0 && e.target.value !== ""){
+        noResultFound.style.display='block';
+    }else{
+        noResultFound.style.display='none';
+    }
     displayPostOffice(filtedPostOffice);
     
 });

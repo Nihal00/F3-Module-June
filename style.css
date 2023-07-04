@@ -149,6 +149,11 @@ body {
     margin-bottom: 0.5rem;
 }
 
+.no-value{
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+}
+
 /* ---------------------Media Query-------------------- */
 @media screen and (max-width: 420px) {
 
@@ -190,7 +195,7 @@ body {
 
     .time-zone-section {
         font-weight: 600;
-        font-size: 0.8rem;
+        font-size: 1.1rem;
         padding-top: 2rem;
         margin-left: var(--margin-left);
     }
@@ -244,11 +249,20 @@ body {
         margin-top: -1.2rem;
     }
 
+    .post-info > p {
+        padding: 0.3rem
+    }
+
     #loader {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    .no-value{
+        font-size: 1rem;
+        padding: 1rem 3rem;
     }
 }
 
